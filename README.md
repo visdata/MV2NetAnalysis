@@ -1,7 +1,6 @@
 # 脑网络数据处理说明文档
-
-## 简称说明：
 ```
+简称说明：
 T1影像：T1加权成像
 DWI影像：弥散加权成像
 FA：Fractional anisotropy
