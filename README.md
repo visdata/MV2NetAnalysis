@@ -34,3 +34,16 @@ DWI影像通过FSL（FMRIB Software Library）的BET（Brain Extraction Tool）�
 （7）	根据FA_DK对Fiber进行label得到DK模板下的labeled_fiber；
 （8）	对labeled_fiber进行计算得到特征值。
 ```
+
+## 六、数据存放位置
+```
+服务器：192.168.0.118
+去骨后的T1影像：/home/tanzh/NM/T1
+DWI影像：/home/tanzh/NM/DWI
+FA影像：/home/tanzh/NM/FA
+FreeSurfer处理后的文件：/home/tanzh/subject
+```
+
+## 七、扩展数据集
+OASIS-3：https://www.oasis-brains.org/
+数据集说明：https://www.oasis-brains.org/files/OASIS-3_Imaging_Data_Dictionary_v1.5.pdf
