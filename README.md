@@ -1,6 +1,7 @@
 # 脑网络数据处理说明文档
 
 ## 简称说明：
+```
 T1影像：T1加权成像
 DWI影像：弥散加权成像
 FA：Fractional anisotropy
@@ -8,6 +9,7 @@ MD：Mean diffusivity
 AxD：Axial diffusivity
 RD：Radial diffusivity
 ROI：Region of Interest
+```
 
 ## 一、脑影像数据：
 数据集来自ADNI（Alzheimer’s Disease Neuroimaging Initiative），包含202人的核磁共振影像数据，其中包括50个健康个体，72个轻度认知损伤个体，38个重度认知损伤个体和42个阿尔兹海默症患者，年龄区间为55到90，共有男性120名和女性82名。核磁共振影像数据包括T1加权成像（T1 weighted image），和弥散加权成像（Diffusion weighted image）。
