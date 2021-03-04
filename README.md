@@ -22,6 +22,7 @@ DWI影像通过FSL（FMRIB Software Library）的BET（Brain Extraction Tool）�
 用于对脑网络进行分析的特征包括神经纤维的强度（Strength），各向异性（FA）、平均弥散系数（MD）、轴向弥散系数（AxD）、径向弥散系数（RD）。神经纤维的强度表示的是ROI之间相连的纤维的数目，各向异性、平均弥散系数、轴向弥散系数和径向弥散系数表示的是连接不同ROI的神经纤维束中纤维上所有体素对应的值取平均。
 
 ## 五、处理流程：
+```
 （1）	使用BrainSuite对T1图像进行去骨处理，得到T1_Stripped；
 （2）	使用eddy对DWI数据进行eddy correct；
 （3）	使用BET对DWI数据进行处理得到mask；
@@ -30,3 +31,4 @@ DWI影像通过FSL（FMRIB Software Library）的BET（Brain Extraction Tool）�
 （6）	使用ANTs对FA和T1_DK进行配准得到FA_DK；
 （7）	根据FA_DK对Fiber进行label得到DK模板下的labeled_fiber；
 （8）	对labeled_fiber进行计算得到特征值。
+```
