@@ -6,13 +6,7 @@ MD：Mean diffusivity
 AxD：Axial diffusivity
 RD：Radial diffusivity
 ROI：Region of Interest
-开源工具：
-BrainSuite：
-FSL：
-BET：
-Camino：http://cmic.cs.ucl.ac.uk/camino/
-FreeSurfer：
-ANTS：
+
 ```
 
 ## 一、脑影像数据：
@@ -52,3 +46,11 @@ FreeSurfer处理后的文件：/home/tanzh/subject
 ## 七、扩展数据集
 OASIS-3：https://www.oasis-brains.org/
 数据集说明：https://www.oasis-brains.org/files/OASIS-3_Imaging_Data_Dictionary_v1.5.pdf
+
+## 开源工具：
+BrainSuite：http://brainsuite.org/
+FSL：https://fsl.fmrib.ox.ac.uk/fsl/fslwiki
+BET：https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/BET
+Camino：http://cmic.cs.ucl.ac.uk/camino/
+FreeSurfer：https://surfer.nmr.mgh.harvard.edu/
+ANTs：https://github.com/ANTsX/ANTs
