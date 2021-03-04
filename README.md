@@ -1,13 +1,18 @@
 # 脑网络数据处理说明文档
 ```
 简称说明：
-T1影像：T1加权成像
-DWI影像：弥散加权成像
 FA：Fractional anisotropy
 MD：Mean diffusivity
 AxD：Axial diffusivity
 RD：Radial diffusivity
 ROI：Region of Interest
+开源工具：
+BrainSuite：
+FSL：
+BET：
+Camino：http://cmic.cs.ucl.ac.uk/camino/
+FreeSurfer：
+ANTS：
 ```
 
 ## 一、脑影像数据：
