@@ -44,13 +44,13 @@ FreeSurfer处理后的文件：/home/tanzh/subject
 ```
 
 ## 七、扩展数据集
-OASIS-3：https://www.oasis-brains.org/
-数据集说明：https://www.oasis-brains.org/files/OASIS-3_Imaging_Data_Dictionary_v1.5.pdf
+OASIS-3：https://www.oasis-brains.org/ <br>
+数据集说明：https://www.oasis-brains.org/files/OASIS-3_Imaging_Data_Dictionary_v1.5.pdf <br>
 
 ## 开源工具：
-BrainSuite：http://brainsuite.org/
-FSL：https://fsl.fmrib.ox.ac.uk/fsl/fslwiki
-BET：https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/BET
-Camino：http://cmic.cs.ucl.ac.uk/camino/
-FreeSurfer：https://surfer.nmr.mgh.harvard.edu/
-ANTs：https://github.com/ANTsX/ANTs
+BrainSuite：http://brainsuite.org/ <br>
+FSL：https://fsl.fmrib.ox.ac.uk/fsl/fslwiki <br>
+BET：https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/BET <br>
+Camino：http://cmic.cs.ucl.ac.uk/camino/ <br>
+FreeSurfer：https://surfer.nmr.mgh.harvard.edu/ <br>
+ANTs：https://github.com/ANTsX/ANTs <br>
