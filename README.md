@@ -177,6 +177,7 @@ python generateGrubbsTable.py
 ##### 1.2.3调用说明：
 |属性	|说明|
 |-------|----|
+|前序步骤	|无|
 |后续步骤	|结果用于getOriginDataForFMri.py|
 |输入	|无|
 |输出	|格拉布斯临界值表（以.txt格式存储）|
