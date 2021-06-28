@@ -2,7 +2,7 @@
 More details on the system backend can be found in:
 https://github.com/visdata/MV2NetVis
 
-## 1.数据集
+## 一、数据集
 |数据集|存储位置|文件格式|概要说明|
 |-----|-------|--------|-------|
 |DWI|/home/tanzh/NM/DWI|nii文件，bvals和bvecs文件|DWI文件|
@@ -16,8 +16,8 @@ https://github.com/visdata/MV2NetVis
 |Geometric feature|/home/tanzh/NM/streamline/features|json文件|几何特征数据|
 |Diffusion feature|/datahouse/zhtan/NM/fmri_result|mat文件|扩散特征数据|
 
-### 1.1DWI
-#### 获取方式
+### 1DWI
+#### 1.1获取方式
 金焰老师提供的数据。
 
 #### 1.2详细描述
@@ -139,7 +139,7 @@ FA（部分各向异性）文件。
 作为getOriginDataForFMri.py的输入，生成用于MV2Net系统的扩散张量特征数据。
 
 
-## 2.数据分析程序
+## 二、数据分析程序
 
 ### 1.扩散张量特征：
 ```
