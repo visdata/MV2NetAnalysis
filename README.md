@@ -16,6 +16,32 @@ https://github.com/visdata/MV2NetVis
 |Geometric feature|/home/tanzh/NM/streamline/features|json文件|几何特征数据|
 |Diffusion feature|/datahouse/zhtan/NM/fmri_result|mat文件|扩散特征数据|
 
+### DWI
+#### 获取方式
+金焰老师提供的数据。
+
+#### 详细描述
+
+#### 使用方法
+参考链接：https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/FDT/UserGuide
+（1）生成mask
+工具：BET
+命令行代码：
+bet <input> <output> [options]
+
+（2）DTIFIT
+工具：DTIFIT
+命令行代码：
+dtifit  -k,--data       dti data file
+        -o,--out        Output basename
+        -m,--mask       Bet binary mask file
+        -r,--bvecs      b vectors file
+        -b,--bvals      b values file
+
+
+
+
+
 
 
 
