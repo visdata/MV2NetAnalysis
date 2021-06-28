@@ -16,7 +16,7 @@ https://github.com/visdata/MV2NetVis
 |Geometric feature|/home/tanzh/NM/streamline/features|json文件|几何特征数据|
 |Diffusion feature|/datahouse/zhtan/NM/fmri_result|mat文件|扩散特征数据|
 
-### 1DWI
+### 1.DWI
 #### 1.1获取方式
 金焰老师提供的数据。
 
