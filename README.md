@@ -139,6 +139,198 @@ FA（部分各向异性）文件。
 作为getOriginDataForFMri.py的输入，生成用于MV2Net系统的扩散张量特征数据。
 
 
+## 2.数据分析程序
+
+### 1.扩散张量特征：
+```
+程序文件
+|-- generate_connectivity.py 
+|-- generateGrubbsTable.py 
+|-- get_fmri_feature.py 
+|-- get_fmri_fibers.py 
+|-- getOriginDataForFMri.py 
+|-- ROIlabel.py
+```
+#### 1.1generate_connectivity.py
+##### 1.1.1功能描述：
+生成神经纤维强度特征数据。
+
+##### 1.1.2调用方法：
+python generate_connectivity.py
+
+##### 1.1.3调用说明：
+|属性	|说明|
+|-------|----|
+|前序步骤	|调用ROIlabel.py获得映射到模板的神经纤维数据|
+|后续步骤	|结果用于getOriginDataForFMri.py|
+|输入	|映射到模板的神经纤维数据|
+|输出	|神经纤维强度（以.mat格式存储）|
+
+
+#### 1.2generateGrubbsTable.py
+##### 1.2.1功能描述：
+生成用于格拉布斯临界值表。
+
+##### 1.2.2调用方法：
+python generateGrubbsTable.py
+
+##### 1.2.3调用说明：
+属性	说明
+前序步骤	无
+后续步骤	结果用于getOriginDataForFMri.py
+输入	无
+输出	格拉布斯临界值表（以.txt格式存储）
+
+
+#### 1.3get_fmri_feature.py
+##### 1.3.1功能描述：
+生成FA、MD、AxD、RD特征数据。
+
+##### 1.3.2调用方法：
+python get_fmri_feature.py
+
+##### 1.3.3调用说明：
+属性	说明
+前序步骤	DTIFIT，ROIlabel.py
+后续步骤	结果用于getOriginDataForFMri.py
+输入	DITIFIT得到的FA、MD、AxD、ED数据，模板映射后神经纤维数据
+输出	FA、MD、AxD、RD（以.mat格式存储）
+
+
+#### 1.4get_fmri_fibers.py
+##### 1.4.1功能描述：
+将神经纤维上的点根据坐标映射到对应的特征值（FA、MD、AxD、RD）。
+
+##### 1.4.2调用方法：
+python get_fmri_fibers.py
+
+##### 1.4.3调用说明：
+属性	说明
+前序步骤	DTIFIT
+后续步骤	结果提供给中山大学
+输入	DITIFIT得到的FA、MD、AxD、ED数据，神经纤维数据
+输出	FA、MD、AxD、RD映射后的神经纤维数据
+
+
+#### 1.5ROIlabel.py
+##### 1.5.1功能描述：
+将神经纤维上的点根据坐标映射到模板ROI。
+
+##### 1.5.2调用方法：
+python ROIlabel.py
+
+##### 1.5.3调用说明：
+属性	说明
+前序步骤	FA进行模板配准
+后续步骤	后续用于generate_connectivity.py和get_fmri_feature.py
+输入	模板配准后的FA数据，神经纤维数据
+输出	模板映射后的神经纤维数据
+
+
+#### 1.6getOriginDataForFMri.py
+##### 1.6.1功能描述：
+生成MV2Net系统所需要的特征数据，特征质量数据。
+
+##### 1.6.2调用方法：
+python getOriginDataForFMri.py
+
+##### 1.6.3调用说明：
+属性	说明
+前序步骤	generate_connectivity.py，generateGrubbsTable.py，
+python get_fmri_feature.py
+后续步骤	结果提供给MV2Net系统
+输入	神经纤维强度、FA、MD、AxD、RD，格拉布斯临界值表，个体信息
+输出	特征数据，特征质量数据
+
+
+### 2.几何特征
+```
+程序文件：
+|-- generate_connectivity.py
+|-- ROIlabel.py
+|-- generateGrubbsTable.py: 生成Grubbs表
+|-- getOriginData.py: 生成后端处理需要的原始文件
+|-- streamlineProcess.py: 处理几何特征
+```
+
+#### 2.1generate_connectivity.py
+##### 2.1.1功能描述：
+生成神经纤维强度特征数据。（同1.1）
+
+##### 2.1.2调用方法：
+python generate_connectivity.py
+
+##### 2.1.3调用说明：
+属性	说明
+前序步骤	调用ROIlabel.py获得映射到模板的神经纤维数据
+后续步骤	结果用于getOriginData.py
+输入	映射到模板的神经纤维数据
+输出	神经纤维强度（以.mat格式存储）
+
+
+#### 2.2ROIlabel.py
+##### 2.2.1功能描述：
+生成神经纤维强度特征数据。（同1.5）
+
+##### 2.2.2调用方法：
+python ROIlabel.py
+
+##### 2.2.3调用说明：
+属性	说明
+前序步骤	FA进行模板配准
+后续步骤	后续用于generate_connectivity.py
+输入	模板配准后的FA数据，神经纤维数据
+输出	模板映射后的神经纤维数据
+
+
+#### 2.3generateGrubbsTable.py
+##### 2.3.1功能描述：
+生成用于格拉布斯临界值表。（同1.2）
+
+##### 2.3.2调用方法：
+python generateGrubbsTable.py
+
+##### 2.3.3调用说明：
+属性	说明
+前序步骤	无
+后续步骤	结果用于getOriginData.py
+输入	无
+输出	格拉布斯临界值表（以.txt格式存储）
+
+
+#### 2.4getOriginData.py
+##### 2.4.1功能描述：
+生成MV2Net系统所需要的特征数据，特征质量数据。
+
+##### 2.4.2调用方法：
+python getOriginData.py
+
+##### 2.4.3调用说明：
+属性	说明
+前序步骤	generate_connectivity.py，generateGrubbsTable.py，
+streamlineProcess.py
+后续步骤	结果提供给MV2Net系统
+输入	神经纤维强度、长度、曲率、挠率、熵，格拉布斯临界值表，个体信息
+输出	特征数据，特征质量数据
+
+
+#### 2.5streamlineProcess.py
+##### 2.5.1功能描述：
+基于神经纤维连接的ROI对几何特征数据进行划分。
+
+##### 2.5.2调用方法：
+python streamlineProcess.py
+
+##### 2.5.3调用说明：
+属性	说明
+前序步骤	无
+后续步骤	结果作为getOriginData.py的输入
+输入	神经纤维长度、曲率、挠率、熵的json文件（中山大学提供） 
+输出	划分后的特征数据
+
+
+
+
 
 
 
