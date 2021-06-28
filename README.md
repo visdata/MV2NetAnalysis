@@ -21,7 +21,7 @@ https://github.com/visdata/MV2NetVis
 金焰老师提供的数据。
 
 #### 详细描述
-
+、、、
 #### 使用方法
 参考链接：https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/FDT/UserGuide
 （1）生成mask
@@ -37,6 +37,7 @@ dtifit  -k,--data       dti data file
         -m,--mask       Bet binary mask file
         -r,--bvecs      b vectors file
         -b,--bvals      b values file
+、、、
 
 
 
