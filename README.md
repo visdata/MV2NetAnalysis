@@ -17,13 +17,13 @@ https://github.com/visdata/MV2NetVis
 |Diffusion feature|/datahouse/zhtan/NM/fmri_result|mat文件|扩散特征数据|
 
 ### 1.DWI
-#### 1.1获取方式
+#### 1.1获取方式：
 金焰老师提供的数据。
 
-#### 1.2详细描述
+#### 1.2详细描述：
 DWI（Diffusion-weighted imaging）文件。
 
-#### 1.3使用方法
+#### 1.3使用方法：
 ```
 参考链接：https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/FDT/UserGuide
 （1）生成mask
