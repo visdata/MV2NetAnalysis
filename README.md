@@ -2,7 +2,7 @@
 More details on the system backend can be found in:
 https://github.com/visdata/MV2NetVis
 
-## 数据集
+## 1.数据集
 |数据集|存储位置|文件格式|概要说明|
 |-----|-------|--------|-------|
 |DWI|/home/tanzh/NM/DWI|nii文件，bvals和bvecs文件|DWI文件|
@@ -16,13 +16,13 @@ https://github.com/visdata/MV2NetVis
 |Geometric feature|/home/tanzh/NM/streamline/features|json文件|几何特征数据|
 |Diffusion feature|/datahouse/zhtan/NM/fmri_result|mat文件|扩散特征数据|
 
-### DWI
+### 1.1DWI
 #### 获取方式
 金焰老师提供的数据。
 
-#### 详细描述
+#### 1.2详细描述
 
-#### 使用方法
+#### 1.3使用方法
 ```
 参考链接：https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/FDT/UserGuide
 （1）生成mask
@@ -39,5 +39,7 @@ dtifit  -k,--data       dti data file
         -r,--bvecs      b vectors file
         -b,--bvals      b values file
 ```
+
+
 
 
