@@ -5,7 +5,7 @@ https://github.com/visdata/MV2NetVis
 ## 一、数据集
 |数据集|存储位置|文件格式|概要说明|
 |-----|-------|--------|-------|
-|DWI|/home/tanzh/NM/DWI|nii.gz文件，bvals和bvecs文件(txt格式)|DWI文件|
+|DWI|/home/tanzh/NM/DWI|nii.gz文件，bvals和bvecs文件(.txt格式)|DWI文件|
 |FA|/home/tanzh/NM/FA|nii文件|FA文件|
 |T1|/home/tanzh/NM/T1|nii.gz文件|去骨后的T1|
 |FA_DK|/home/tanzh/NM/FA_DK|nii.gz文件|使用ANTs对FA和T1_DK配准后的文件|
