@@ -1,6 +1,7 @@
 # MV2Net系统数据分析文档
 More details on the system backend can be found in:
 https://github.com/visdata/MV2NetVis
+备注：fmri是命名错误，实际对应的是diffusion mri。
 
 ## 一、数据集
 |数据集|存储位置|文件格式|概要说明|文件大小|
