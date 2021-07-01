@@ -3,20 +3,20 @@ More details on the system backend can be found in:
 https://github.com/visdata/MV2NetVis
 
 ## 一、数据集
-|数据集|存储位置|文件格式|概要说明|
-|-----|-------|--------|-------|
-|DWI|/home/tanzh/NM/DWI|nii.gz文件，bvals.txt和bvecs.txt文件|DWI文件|
-|FA|/home/tanzh/NM/FA|nii文件|FA文件|
-|T1|/home/tanzh/NM/T1|nii.gz文件|去骨后的T1|
-|FA_DK|/home/tanzh/NM/FA_DK|nii.gz文件|使用ANTs对FA和T1_DK配准后的文件|
-|T1_DK|/home/tanzh/subject/*/mri |.nii.gz|使用FreeSurfer对T1进行模板配准得到的文件|
-|Fiber|/datahouse/zhtan/NM/tract|mat文件|神经纤维文件|
-|Labeled fiber|/datahouse/zhtan/NM/remained_labeled_tract|mat文件|根据模板对点进行映射后的神经纤维文件|
-|Fiber strength|/datahouse/zhtan/NM/connectivity|mat文件|神经纤维强度|
-|Geometric feature|/home/tanzh/NM/streamline/features|json文件|几何特征数据|
-|Diffusion feature|/datahouse/zhtan/NM/fmri_result|mat文件|扩散特征数据|
+|数据集|存储位置|文件格式|概要说明|文件大小|
+|-----|-------|--------|-------|-------|
+|DWI|/home/tanzh/NM/DWI|nii.gz文件，bvals.txt和bvecs.txt文件|DWI文件|18G|
+|FA|/home/tanzh/NM/FA/*|nii文件|FA文件|3G|
+|T1|/home/tanzh/NM/T1|nii.gz文件|去骨后的T1|357M|
+|FA_DK|/home/tanzh/NM/FA_DK|nii.gz文件|使用ANTs对FA和T1_DK配准后的文件|13M|
+|T1_DK|/home/tanzh/subject/*/mri |.nii.gz|使用FreeSurfer对T1进行模板配准得到的文件|60M|
+|Fiber|/datahouse/zhtan/NM/tract|mat文件|神经纤维文件|74G|
+|Labeled fiber|/datahouse/zhtan/NM/remained_labeled_tract(new_labeled_tract)|mat文件|根据模板对点进行映射后的神经纤维文件|831M(2G)|
+|Fiber strength|/datahouse/zhtan/NM/connectivity|mat文件|神经纤维强度|1.5M|
+|Geometric feature|/home/tanzh/NM/streamline/features|json文件|几何特征数据|43M|
+|Diffusion feature|/datahouse/zhtan/NM/fmri_result|mat文件|扩散特征数据|6M|
 ```
-*表示个体id，比如003_S_2374_1
+备注：*表示个体id，比如003_S_2374_1
 ```
 
 ### 1.DWI
