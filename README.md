@@ -9,12 +9,15 @@ https://github.com/visdata/MV2NetVis
 |FA|/home/tanzh/NM/FA|nii文件|FA文件|
 |T1|/home/tanzh/NM/T1|nii.gz文件|去骨后的T1|
 |FA_DK|/home/tanzh/NM/FA_DK|nii.gz文件|使用ANTs对FA和T1_DK配准后的文件|
-|T1_DK|* |*	|使用FreeSurfer对T1进行模板配准得到的文件|
+|T1_DK|/home/tanzh/subject/*/mri |.nii.gz|使用FreeSurfer对T1进行模板配准得到的文件|
 |Fiber|/datahouse/zhtan/NM/tract|mat文件|神经纤维文件|
 |Labeled fiber|/datahouse/zhtan/NM/remained_labeled_tract|mat文件|根据模板对点进行映射后的神经纤维文件|
 |Fiber strength|/datahouse/zhtan/NM/connectivity|mat文件|神经纤维强度|
 |Geometric feature|/home/tanzh/NM/streamline/features|json文件|几何特征数据|
 |Diffusion feature|/datahouse/zhtan/NM/fmri_result|mat文件|扩散特征数据|
+```
+*表示个体id，比如003_S_2374_1
+```
 
 ### 1.DWI
 #### 1.1获取方式：
