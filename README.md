@@ -100,7 +100,7 @@ FA（部分各向异性）文件。
 作为ROIlabel.py的输入，输出模板划分后的神经纤维。
 
 
-### 7.Labeled_iber
+### 7.Labeled_fiber
 #### 7.1获取方式：
 由ROIlabel.py生成。
 
